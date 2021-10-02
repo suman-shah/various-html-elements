@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Student registration form </h1>
+    <form target="_blank" method="GET" align="center">
+        <label form="Name">Name: </label>
+        <input name="Name" type="text" placeholder="Shuvam Kumar Gupta" required> <br> <br>
+
+        <label form="email">Email: </label>
+        <input name="email" type="text" placeholder="abc@xyz.com" required> <br> <br>
+
+        <label form="Roll no">Roll no: </label>
+        <input name="Roll no" type="text" placeholder="1900290130160" required> <br> <br>
+
+        <label for="gender">Gender: </label>
+        
+        <input type="radio" value="Male" name="gender">
+        <label for="gender">Male: </label> <br>
+        
+        <input type="radio" value="Female" name="gender">
+        <label for="gender">Female: </label> <br>
+        
+        <input type="radio" name="gender" value="Other">
+        <label for="gender">Other: </label> <br>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="dob"> <br> <br>
+
+        <label for="branch">Branch: </label>
+        <select id="branch" name="branch">
+            <option value="IT">Information Technology</option>
+            <option value="CSE">Computer Science</option>
+            <option value="CE">Civil Engineering</option>
+        </select> <br><br>
+
+        <label for="query">Any questions: </label> <br><br>
+        <textarea name="query" id="query" cols="50" rows="7" placeholder="Queries"></textarea>
+<br> <br>
+        <input type="submit"> &nbsp;&nbsp;&nbsp;&nbsp; <input type="reset">
+        </form>
+</body>
+</html>
