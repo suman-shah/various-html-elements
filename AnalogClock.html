@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+     <style>
+body {
+ background-color: rgb(0, 0, 0);
+}
+.clock {
+  position: absolute;
+  width: 50vh;
+  height: 50vh;
+  padding: 3%;
+  margin-left: 33%;
+  margin-top: 4%;
+  border-radius: 50%;
+  box-shadow: rgb(255, 255, 255) 0px 0px 50px 0px;
+  border: 10px solid rgb(0, 0, 0);
+}
+.sec {
+  position: absolute;
+  height: 43%;
+  z-index: 3;
+  bottom: 50%;
+  left: 52%;
+  border-radius: 50%;
+  width: 1vh;
+  transform-origin: bottom;
+  background: rgb(226, 223, 223);
+  animation: sec_anim 60s linear infinite;
+}
+.min {
+  position: absolute;
+  height: 40%;
+  z-index: 2;
+  bottom: 50%;
+  left: 52%;
+  border-radius: 50% 50%;
+  width: 1vh;
+  transform-origin: bottom;
+  background: rgb(224, 223, 223);
+  animation: sec_anim 3600s linear infinite;
+}
+.hour {
+  position: absolute;
+  height: 35%;
+  z-index: 1;
+  bottom: 50%;
+  left: 52%;
+  border-radius: 50%;
+  width: 1vh;
+  transform-origin: bottom;
+  background: rgb(231, 226, 226);
+  animation: sec_anim 43200s linear infinite;
+}
+@keyframes sec_anim {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+    </style>
+  </head>
+  <body>
+   
+    <div class="clock">
+      <div class="sec"></div>
+      <div class="min"></div>
+      <div class="hour"></div>
+    </div>
+  </body>
+</html>
