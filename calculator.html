@@ -1,0 +1,136 @@
+<!DOCTYP E html>
+<html>
+<head>
+	<title></title>
+	
+</head>
+<style>
+
+body{
+	/* background-color: rgb(221, 192, 26); */
+}
+
+h1{
+	margin-top: 150px;
+	font-family:monospace; 
+	color: black;
+}
+
+table{
+background:rgba(11, 235, 149, 0.2);
+padding: 14px;
+
+font-size:4em 3em;
+border-radius: 10px;
+
+	
+}
+
+.btn0{
+	padding: 4px 28px;
+	margin:2px;
+	text-align: center;
+	border-radius: 5px;
+	background-color: black;
+	color:white;
+}
+.btn1{
+	padding: 4px 18px;
+	margin:2px;
+	border-radius: 15px;
+	text-align: center;
+	background-color:  #ffff4d;
+	color:red;
+}
+.btn2{
+	padding: 4px 17px;
+	margin:2px;
+	border-radius: 15px;
+	text-align: center;
+	background-color:#3333ff;
+	color:white;
+}
+.btn3{
+	padding: 4px 17px;
+	margin:2px;
+	border-radius: 15px;
+	text-align: center;
+	background-color: #4dff4d;
+	color:black;
+}
+.btn4{
+	padding: 4px 17px;
+	margin:2px;
+	border-radius: 15px;
+	text-align: center;
+	background-color:#ff66cc;
+	color:white;
+}
+.btn5{
+	padding: 3px 102px;
+	margin:2px;
+	border-radius: 15px;
+	text-align: center;
+	background-color:#4d0f00;
+	color:white;
+}
+
+
+
+
+
+</style>
+<body>
+
+	<center><div class="container ">
+		<h1>simple calculator:</h1>
+	<form name="calculator">
+		<table border="2"  >
+			<tr>
+				<td colspan="4" >
+					<input class="btn0" type="btn18" text="none" name="display">
+				</td>
+			</tr>
+			
+				<tr>
+			<td><input class="btn1" type="button" value="+" onclick="calculator.display.value+='+'"></td>
+			<td><input class="btn1" type="button" value="-" onclick="calculator.display.value+='-'"></td>
+			<td><input class="btn1" type="button" value="*" onclick="calculator.display.value+='*'"></td>
+			<td><input class="btn1" type="button" value="/" onclick="calculator.display.value+='/'"></td>
+		</tr>
+		
+		<tr>
+			<td><input class="btn2" type="button" value="7" onclick="calculator.display.value+='7'"></td>
+			<td><input class="btn2" type="button" value="8" onclick="calculator.display.value+='8'"></td>
+			<td><input class="btn2" type="button" value="9" onclick="calculator.display.value+='9'"></td>
+			<td><input class="btn2" type="button" value="0" onclick="calculator.display.value+='0'"></td>
+		</tr>
+		<tr>
+			<td><input class="btn3" type="button" value="6" onclick="calculator.display.value+='6'"></td>
+			<td><input class="btn3" type="button" value="5" onclick="calculator.display.value+='5'"></td>
+			<td><input class="btn3" type="button" value="4" onclick="calculator.display.value+='4'"></td>
+			<td><input class="btn3" type="button" value="3" onclick="calculator.display.value+='3'"></td>
+		</tr>
+		<tr>
+			<td><input class="btn4" type="button" value="2" onclick="calculator.display.value+='2'"></td>
+			<td><input class="btn4" type="button" value="1" onclick="calculator.display.value+='1'"></td>
+			<td><input class="btn4" type="button" value="." onclick="calculator.display.value+='.'"></td>
+			<td >
+				<input class="btn4" type="reset" value="c"></td>
+			
+		</tr>
+
+		<tr>
+			<td colspan="4">
+				<input class="btn5" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></td>
+		</tr>
+	</table>
+	
+	</form>
+</div></center>
+	<script type="ext/javascript">
+		
+	</script>
+
+</body>
+</html>
