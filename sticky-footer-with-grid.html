@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky footer with Grid</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      #app {
+        height: 100vh;
+
+        /* grid container settings */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+          "header"
+          "main"
+          "footer";
+      }
+
+      #app > header {
+        grid-area: header;
+      }
+
+      #app > main {
+        grid-area: main;
+        padding: 15px 5px 10px 5px;
+      }
+
+      #app > footer {
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <header>header</header>
+      <main>main</main>
+      <footer>footer</footer>
+    </div>
+  </body>
+</html>
